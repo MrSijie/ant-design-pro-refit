@@ -16,3 +16,7 @@ export async function login(params) {
     },
   });
 }
+
+export async function logout() {
+  return request('/rest/s1/user/logout');
+}
