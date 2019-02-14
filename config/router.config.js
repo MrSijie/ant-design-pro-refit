@@ -15,7 +15,7 @@ export default [
     path: '/',
     component: '../layouts/BasicLayout',
     Routes: ['src/pages/Authorized'],
-    authority: ['admin', 'user'],
+    authority: ['ADMIN'],
     routes: [
       // dashboard
       { path: '/', redirect: '/account/settings/base' },

@@ -7,3 +7,12 @@ export async function query() {
 export async function queryCurrent() {
   return request('/api/currentUser');
 }
+
+export async function login(params) {
+  return request('/rest/s1/user/login', {
+    method: 'POST',
+    body: {
+      ...params,
+    },
+  });
+}
