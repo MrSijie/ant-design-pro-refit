@@ -19,7 +19,7 @@ export default {
       yield put({
         type: 'changeLoginStatus',
         payload: {
-          status: response.success ? 'ok' : false,
+          status: response.success ? 'ok' : 'error',
           currentAuthority: response.groups,
           type: 'account',
         },
